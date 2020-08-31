@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 200px;
+}
+
+.loading-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.3333;
+  font-weight: 400;
+  color: #151b26;
+  text-align: center;
+  animation-name: flicker;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.progress-bar {
+  position: relative;
+  height: 12px;
+  width: 300px;
+  background-color: #e5eaef;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.progress-bar-gauge {
+  position: absolute;
+  height: 12px;
+  top: 0;
+  left: 0;
+  width: 0;
+  background-color: #13ce66;
+  border-radius: 100px;
+  animation-name: loadingbar;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes loadingbar {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  80% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
