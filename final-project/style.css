@@ -108,6 +108,25 @@ p {
   margin-right: 8px;
 }
 
+/* Service */
+
+.service {
+  background-color: #f4f5f7;
+  padding: 80px 0;
+}
+
+.service-title {
+  font-size: 22px;
+  line-height: 1.3636363;
+  letter-spacing: -0.04em;
+  color: #2b292d;
+  margin-bottom: 16px;
+}
+
+.service .col-12:first-child {
+  margin-bottom: 40px;
+}
+
 /* > 768px (Desktop) */
 @media screen and (min-width: 768px) {
   p {
@@ -138,6 +157,16 @@ p {
   }
   .landing .button-group .fill-button:first-child {
     margin-right: 16px;
+  }
+
+  /* Service */
+  .service-title {
+    font-size: 26px;
+    line-height: 1.3076923;
+  }
+
+  .service .col-12:first-child {
+    margin-bottom: 0;
   }
 }
 
