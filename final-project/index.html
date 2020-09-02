@@ -1,477 +1,155 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./grid.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Final Project</title>
+  </head>
+  <body>
+    <section class="landing">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="landing-content">
+              <h1 class="landing-title">Change your career, <br />Change your life</h1>
 
-body {
-  font-family: 'DM Sans', sans-serif;
-}
+              <p class="landing-dsc">
+                Get ahead with expert-led training in <br />
+                coding & design
+              </p>
 
-/* Reset CSS */
-a {
-  color: inherit;
-  text-decoration: none;
-}
+              <div class="button-group">
+                <a href="#" class="fill-button"> Apply now </a>
+                <a href="#" class="fill-button inverted"> Learn more </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-button,
-iput,
-textarea {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
-}
+    <section class="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h2 class="service-title">Master the Fundamentals while Exploring new Tech</h2>
+            <p class="service-dsc">We teach cutting-edge tech Full Stack Javascript as well as Computer Science fundamentals.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2 class="service-title">Develop Production Level Web Applications</h2>
+            <p class="service-dsc">
+              You put your knowledge into action with carefully designed assignments and personal software engineering projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-button:focus,
-button:active,
-input:focus,
-input:active,
-textarea:focus,
-textarea:active {
-  box-shadow: none;
-  outline: none;
-}
+    <section class="program section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <strong class="section-category">Program</strong>
+            <h1 class="section-title">Frontend Dev. <br />Immersive Course</h1>
+            <p class="section-dsc">
+              Your best course for career transformation in front-end developement. This full-time bootcamp features expert instruction,
+              one-on-one career coaching, and connections to top employers to get you hired.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <a href="#" class="program-card"><img src="./assets/img-fulltime-campus.png" alt="" /><strong>Full-Time On Campus</strong></a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="#" class="program-card"><img src="./assets/img-fulltime-remote.png" alt="" /><strong>Full-Time On Remote</strong></a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="#" class="program-card"><img src="./assets/img-parttime-flex.png" alt="" /><strong>Part-Time On Flex</strong></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-ul,
-ol,
-li {
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0;
-}
+    <section class="curriculum section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <strong class="section-category">Curriculum</strong>
+            <h1 class="section-title">Dive into the web development</h1>
+            <p class="section-dsc">
+              Dive into the software development environment and the basics of computing, networks, and data structures
+            </p>
+            <a href="#" class="fill-button">Apply now</a>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="curriculum-img">
+              <img src="./assets/img-curriculum.png" alt="curriculum" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p class="curriculum-detail-desc">
+              <strong>Real-World Projects.</strong> Solve challenges that professional engineers face as you work individually and in teams
+              with designers.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="curriculum-detail-desc">
+              <strong>Individualised Instructor Support.</strong> Get guidance, feedback, and more during scheduled one-on-one check-ins.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #2b292d;
-  letter-spacing: -0.01em;
-}
-
-.fill-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #3040c4;
-  color: #ffffff;
-  border-radius: 2px;
-  width: 140px;
-  height: 48px;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.6;
-  letter-spacing: -0.05em;
-  transition: opacity 300ms ease-in-out;
-  border: none;
-}
-.fill-button.inverted {
-  background-color: #ffffff;
-  color: #3040c4;
-}
-
-.fill-button:hover {
-  opacity: 0.5;
-}
-
-.section {
-  padding: 80px 0;
-}
-.section-category {
-  display: block;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.01em;
-  margin-bottom: 8px;
-}
-.section-title {
-  font-size: 34px;
-  line-height: 1.058823;
-  letter-spacing: -0.03em;
-  color: #2b292d;
-  margin-bottom: 24px;
-}
-
-/* landing */
-
-.landing {
-  background-color: #fdded8;
-  text-align: center;
-}
-
-.landing-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-}
-
-.landing-title {
-  font-size: 40px;
-  color: #2b292d;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  margin-bottom: 24px;
-}
-
-.landing-dsc {
-  margin-bottom: 20px;
-}
-
-.landing .button-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.landing .button-group .fill-button:first-child {
-  margin-right: 8px;
-}
-
-/* Service */
-
-.service {
-  background-color: #f4f5f7;
-  padding: 80px 0;
-}
-
-.service-title {
-  font-size: 22px;
-  line-height: 1.3636363;
-  letter-spacing: -0.04em;
-  color: #2b292d;
-  margin-bottom: 16px;
-}
-
-.service .col-12:first-child {
-  margin-bottom: 40px;
-}
-
-/* Program */
-
-.program .row:first-child {
-  margin-bottom: 32px;
-}
-
-.program .col-md-4 {
-  margin-bottom: 20px;
-}
-
-.program .col-md-4:last-child {
-  margin-bottom: 0px;
-}
-.program .section-category {
-  color: #009b4d;
-}
-
-.program-card {
-  display: block;
-  padding: 24px 0 32px;
-  border-radius: 8px;
-  background-color: white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-  text-align: center;
-  transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
-}
-
-.program-card:hover {
-  background-color: #3141c5;
-  box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
-}
-.program-card:hover strong {
-  color: #fff;
-}
-
-.program-card img {
-  display: block;
-  width: auto;
-  height: 195px;
-  margin: 0 auto 16px;
-}
-.program-card strong {
-  font-size: 18px;
-  line-height: 1.333333;
-  letter-spacing: -0.02em;
-  transition: color 500ms ease-in-out;
-}
-
-/* Curriculum */
-.curriculum .row:first-child {
-  margin-bottom: 48px;
-}
-
-.curriculum .row:last-child .col-12:first-child {
-  margin-bottom: 40px;
-}
-
-.curriculum .section-category {
-  color: #0189d1;
-}
-
-.curriculum .section-dsc {
-  margin-bottom: 30px;
-}
-
-.curriculum-img {
-  display: none;
-}
-
-.curriculum-detail-desc {
-  font-size: 15px;
-  line-height: 1.46666667;
-  color: #2b292d;
-  letter-spacing: -0.01em;
-}
-
-/*  subscription */
-
-.subscription {
-  background-color: #f2f8fa;
-  text-align: center;
-  padding: 40px 0;
-}
-.subscription-image {
-  padding: 25px 0;
-}
-
-.subscription-image img {
-  display: block;
-  width: auto;
-  height: 190px;
-  margin: 0 auto;
-}
-
-.subscription-title {
-  font-size: 32px;
-  color: #2b292d;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  margin-bottom: 16px;
-}
-.subscription-desc {
-  margin-bottom: 24px;
-}
-.subscription .input-group {
-  margin-bottom: 8px;
-}
-
-.subscription .input-group input {
-  width: 100%;
-  height: 48px;
-  padding: 0 16px;
-  border-radius: 2px;
-  background-color: #fff;
-  border: none;
-  margin-bottom: 8px;
-}
-
-.subscription .input-group button {
-  width: 100%;
-}
-
-.subscription-form .form-notice {
-  font-size: 13px;
-  line-height: 1.53;
-  letter-spacing: 0;
-  color: #7b7b7e;
-}
-.subscription-form .form-notice a {
-  text-decoration: underline;
-  color: #3040c4;
-}
-
-/* footer */
-
-.footer {
-  padding: 24px 0;
-}
-
-.footer-link a {
-  font-size: 14px;
-  line-height: 1.7142857143;
-  color: #807f81;
-}
-
-.footer-link {
-  margin-bottom: 8px;
-}
-.footer-link:last-child {
-  margin-bottom: 0;
-}
-/* > 768px (Desktop) */
-@media screen and (min-width: 768px) {
-  p {
-    font-size: 22px;
-    line-height: 1.36363636;
-  }
-  .fill-button {
-    width: 160px;
-    height: 56px;
-    font-size: 18px;
-    line-height: 1.555555;
-  }
-
-  .section {
-    padding-bottom: 96px;
-  }
-  .section-category {
-    margin-bottom: 16px;
-    font-size: 22px;
-    line-height: 1.09090909;
-  }
-  .section-title {
-    margin-bottom: 32px;
-    font-size: 56px;
-    line-height: 1;
-  }
-
-  /* landing */
-  .landing-content {
-    height: auto;
-    padding: 120px;
-  }
-  .landing-title {
-    font-size: 70px;
-    line-height: 1.028571428571429;
-    margin-bottom: 32px;
-  }
-  .landing-dsc {
-    font-size: 22px;
-    line-height: 1.45454545;
-    margin-bottom: 32px;
-  }
-
-  .section-category {
-    display: block;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.01em;
-    margin-bottom: 8px;
-  }
-  .section-title {
-    font-size: 34px;
-    line-height: 1.058823;
-    letter-spacing: -0.04em;
-    color: #2b292d;
-    margin-bottom: 24px;
-  }
-
-  .landing .button-group .fill-button:first-child {
-    margin-right: 16px;
-  }
-
-  /* Service */
-  .service-title {
-    font-size: 26px;
-    line-height: 1.3076923;
-  }
-
-  .service .col-12:first-child {
-    margin-bottom: 0;
-  }
-
-  /* Program */
-
-  .program {
-    text-align: center;
-  }
-  .program .row:first-child {
-    margin-bottom: 72px;
-  }
-
-  .program-card img {
-    margin-bottom: 20px;
-  }
-  .program-card {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-
-  /* curriculum */
-  .curriculum .row:first-child {
-    margin-bottom: 24px;
-  }
-
-  .curriculum .section-dsc {
-    margin-bottom: 72px;
-  }
-
-  .curriculum-detail-desc {
-    font-size: 18px;
-    line-height: 1.44444444;
-  }
-  .curriculum-img {
-    display: block;
-  }
-  .curriculum-img img {
-    display: block;
-    width: 100%;
-    max-width: 425px;
-    height: auto;
-  }
-  .curriculum .row:last-child .col-12:first-child {
-    margin-bottom: 0;
-  }
-
-  /* subscription */
-  .subscription {
-    text-align: left;
-    padding: 80px 0;
-  }
-  .subscription-image {
-    padding: 8px 0;
-  }
-  .subscription-image img {
-    height: 285px;
-    margin-left: 0;
-  }
-  .subscription-title {
-    font-size: 40px;
-  }
-
-  .subscription .input-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4px;
-  }
-  .subscription .input-group .fill-button {
-    width: 160px;
-    flex-shrink: 0;
-  }
-  .subscription .input-group input {
-    height: 56px;
-    font-size: 18px;
-    line-height: 1.333333;
-    margin-bottom: 0;
-    margin-right: 8px;
-  }
-
-  .subscription-form .form-notice {
-    font-size: 14px;
-    line-height: 1.7142857143;
-  }
-
-  /* footer */
-  .footer {
-    padding: 16px 0;
-  }
-  .footer-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer-link {
-    margin-right: 16px;
-    margin-bottom: 0;
-  }
-  .footer-link:last-child {
-    margin-right: 0;
-  }
-}
-
-/* Custom Grid system - Fix container width */
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 960px !important;
-  }
-}
+    <section class="subscription">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5">
+            <div class="subscription-image">
+              <img src="./assets/img-banner.png" alt="banner" />
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+            <h1 class="subscription-title">Stay with us</h1>
+            <p class="subscription-desc">Subscribe to our email newsletter to stay up to date on the latest updates</p>
+            <form action="#" method="POST" class="subscription-form">
+              <div class="input-group">
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit" class="fill-button">Get started</button>
+              </div>
+              <p class="form-notice">
+                Cancel any time. Check out
+                <a href="#">Terms of Use.</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="footer-links">
+              <li class="footer-link">
+                <a href="#">Terms</a>
+              </li>
+              <li class="footer-link">
+                <a href="#">Privacy</a>
+              </li>
+              <li class="footer-link">
+                <a href="#">License</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
